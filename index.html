@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Frontend Mentor | Notifications page</title>
+</head>
+<body>
+
+<template id="temp">
+  <div class="tab container flex">
+    
+    <img class="tab__img" src="" alt="">
+    
+    <div class="tab-main">
+      
+      <div class="tab-head flex">
+        <div class="tab__text">
+          <span class="tab-text__name"></span>
+          <span class="tab-text__reaction"></span>
+          <span class="tab-text__subject"></span>
+          <div class="tab-text__red-dot"></div>
+          <p class="tab-text__time-ago"></p>
+        </div>
+        
+        <img class="tab__msg-img" src="" alt="">
+      </div>
+      
+      <div class="tab-inner">
+        <p class="tab-inner__text"></p>
+      </div>
+    
+    </div>
+    
+  </div>
+</template>
+
+
+<div class="wrapper">
+  <header class="header container flex">
+    <h1 class="header__head">Notifications</h1>
+    <p class="header__text" id="msg-num"></p>
+    <button class="header__btn" onclick="reset()">Mark all as read</button>
+  </header>
+  
+  <main id="main"></main>
+
+</div> <!-- wrapper end -->
+
+</body>
+</html>
