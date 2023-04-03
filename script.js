@@ -106,10 +106,10 @@ function msgDisplay() {
 
 function reset() {
   tab.forEach((tab) => {
-    tab.style.background = "var(--clr-neutral-200)";
-    tab.querySelector(".tab-text__red-dot").style.display = "inline-block";
+    tab.style.background = "transparent";
+    tab.querySelector(".tab-text__red-dot").style.display = "none";
     tab.querySelector(".tab-inner").classList.remove("active");
-    unreadMsg = 7;
+    unreadMsg = 0;
     msgCnt.textContent = unreadMsg;
   }) 
 }
